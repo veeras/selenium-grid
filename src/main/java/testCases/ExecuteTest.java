@@ -55,9 +55,17 @@ public class ExecuteTest {
      //  WebDriver webdriver = new FirefoxDriver();
      //  WebDriver webdriver = new ChromeDriver();
         
-       DesiredCapabilities dc = DesiredCapabilities.firefox();
-       dc.setBrowserName("firefox");
-     //  dc.setPlatform(Platform.WIN10);
+    	// firefox
+	/*
+	 * DesiredCapabilities dc = DesiredCapabilities.firefox();
+	 * dc.setBrowserName("firefox");
+	 */
+       // chrome
+       
+       DesiredCapabilities dc = DesiredCapabilities.chrome();
+       dc.setBrowserName("chrome");
+       
+       //  dc.setPlatform(Platform.WIN10);
 		/*
 		 * if (System.getProperty("browser").equals("firefox")) dc =
 		 * DesiredCapabilities.firefox();
