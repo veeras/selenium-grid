@@ -63,8 +63,11 @@ public class ExecuteTest {
        // chrome
        
        DesiredCapabilities dc = DesiredCapabilities.chrome();
-       dc.setBrowserName("chrome");
-       
+
+       dc.setCapability("browserName", "chrome");
+     //  dc.setCapability("version", "83.0");
+       dc.setPlatform(Platform.ANY);
+    
        //  dc.setPlatform(Platform.WIN10);
 		/*
 		 * if (System.getProperty("browser").equals("firefox")) dc =
@@ -72,7 +75,7 @@ public class ExecuteTest {
 		 */
      //  String host = System.getProperty("seleniumHubHost"); 
       // String host = System.getProperty("localhost"); 
-       webdriver = new RemoteWebDriver(new URL("http://localhost:4444/wd/hub"), dc);
+       webdriver = new RemoteWebDriver(new URL("http://192.168.99.100:4444/wd/hub"), dc);
       
        
        
