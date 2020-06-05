@@ -15,5 +15,6 @@ node{
 
  stage('removing all runnning containers'){
    bat "rmContainers.bat"
+   bat 'docker network rm grid'
  }
 }
